@@ -59,6 +59,17 @@ var unblockServices = {
         patterns: [],
         allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
     },
+    instagram: {
+        domains: [
+            "instagram.com", "cdninstagram.com", "instagr.am"
+        ],
+        patterns: [
+            "*instagram.com/*",    // Шаблон для всех запросов к Instagram
+            "*cdninstagram.com/*", // Шаблон для всех запросов к CDN Instagram
+            "*instagr.am/*"        // Шаблон для сокращенных ссылок Instagram
+        ],
+        allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
+    },
     // Можно добавлять другие сервисы здесь
 };
 
