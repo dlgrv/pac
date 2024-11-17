@@ -70,7 +70,15 @@ var unblockServices = {
         ],
         allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
     },
-    // Можно добавлять другие сервисы здесь
+    aiogram: {
+        domains: [
+            "docs.aiogram.dev" // Домен документации aiogram
+        ],
+        patterns: [
+            "*docs.aiogram.dev/*" // Шаблон для всех запросов к aiogram docs
+        ],
+        allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
+    },
 };
 
 // Запрещенные IP-адреса
