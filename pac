@@ -79,6 +79,19 @@ var unblockServices = {
         ],
         allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
     },
+    github: {
+        domains: [
+            "github.com",
+            "gist.github.com",
+            "githubusercontent.com"
+        ],
+        patterns: [
+            "*github.com/*",
+            "*gist.github.com/*",
+            "*githubusercontent.com/*"
+        ],
+        allowedIPs: []
+    },
 };
 
 // Запрещенные IP-адреса
