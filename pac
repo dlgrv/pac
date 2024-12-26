@@ -92,6 +92,19 @@ var unblockServices = {
         ],
         allowedIPs: []
     },
+    notion: {
+        domains: [
+            "notion.so",           // Основной домен Notion
+            "notion-static.com",   // CDN для статических ресурсов
+            "sentry.io"            // Для мониторинга ошибок
+        ],
+        patterns: [
+            "*notion.so/*",         // Шаблон для всех запросов к Notion
+            "*notion-static.com/*", // Шаблон для статических ресурсов
+            "*sentry.io/*"          // Шаблон для запросов к Sentry
+        ],
+        allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
+    },
 };
 
 // Запрещенные IP-адреса
