@@ -105,6 +105,17 @@ var unblockServices = {
         ],
         allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
     },
+    soundcloud: {
+        domains: [
+            "soundcloud.com",      // Основной домен SoundCloud
+            "sndcdn.com"           // Домен для статических ресурсов
+        ],
+        patterns: [
+            "*soundcloud.com/*",   // Шаблон для всех запросов к SoundCloud
+            "*sndcdn.com/*"        // Шаблон для всех запросов к CDN SoundCloud
+        ],
+        allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
+    },
 };
 
 // Запрещенные IP-адреса
