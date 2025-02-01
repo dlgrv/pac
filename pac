@@ -2,7 +2,7 @@
 var useCustomProxy = true;        // true - использовать пользовательский прокси, false - системный прокси
 var customProxyType = "SOCKS5";   // Тип прокси (например, "HTTP", "SOCKS5")
 var customProxyIP = "127.0.0.1";  // IP-адрес пользовательского прокси
-var customProxyPort = "1086";     // Порт пользовательского прокси
+var customProxyPort = "1080";     // Порт пользовательского прокси
 var systemProxy = "PROXY";        // Системный прокси (по умолчанию "PROXY")
 var directConnection = "DIRECT";   // Прямое подключение
 
