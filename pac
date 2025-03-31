@@ -128,6 +128,21 @@ var unblockServices = {
             "*spoti.fi/*"          // Сокращенные URL
         ],
         allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
+    },
+    linkedin: {
+        domains: [
+            "linkedin.com",         // Основной домен
+            "licdn.com",            // CDN для контента
+            "linkedin.at",         // Дополнительные домены
+            "lnkd.in"              // Сокращенные ссылки
+        ],
+        patterns: [
+            "*linkedin.com/*",      // Все поддомены и пути
+            "*licdn.com/*",         // Контент и медиа
+            "*linkedin.at/*",       // Дополнительные пути
+            "*lnkd.in/*"           // Сокращенные URL
+        ],
+        allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
     }
 };
 
