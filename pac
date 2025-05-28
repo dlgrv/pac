@@ -143,6 +143,15 @@ var unblockServices = {
             "*lnkd.in/*"           // Сокращенные URL
         ],
         allowedIPs: [] // IP-адреса, которые нужно использовать через прокси
+    },
+    broadcom: {
+        domains: [
+            "broadcom.com"
+        ],
+        patterns: [
+            "*broadcom.com/*"
+        ],
+        allowedIPs: []
     }
 };
 
